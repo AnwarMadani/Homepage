@@ -106,6 +106,21 @@ main h2{
     font-size: 2rem;
 }
 
+footer{
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 @media screen and (max-width: 800px) {
     .header-container{
         flex-direction: column;
@@ -131,5 +146,8 @@ main h2{
         grid-template-rows: repeat(6, 500px);
     }
 
+    footer{
+        flex-direction: column;
+    }
     
 }
