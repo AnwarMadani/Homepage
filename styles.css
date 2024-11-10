@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    min-height: 600px;
+    background-color: lightblue;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container .image{
+    position: relative;
+    display: inline-block;
+}
+
+.header-container .image img{
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.header-container .image h1{
+    position: absolute;
+    bottom: 2rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.header-container .hero{
+    height: 400px;
+    background-color: white;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.hero .social-icons{
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
