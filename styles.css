@@ -74,14 +74,15 @@ main h2{
 
 .works-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 350px);
     gap: 1rem;
 }
 
 .card{
     height: 200px;
-    border: 1px solid grey;
     border-radius: .5rem;
+    font-size: 1.3rem;
 }
 .card-bottom{
     padding: .5rem;
@@ -99,6 +100,11 @@ main h2{
     height: auto;
 }
 
+.title .links{
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+}
 
 @media screen and (max-width: 800px) {
     .header-container{
@@ -114,6 +120,15 @@ main h2{
     .hero .social-icons{
         width: 100%;
         font-size: 3rem;
+    }
+
+    main h2{
+        text-align: center;
+    }
+
+    .works-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 500px);
     }
 
     
