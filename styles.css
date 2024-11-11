@@ -63,20 +63,25 @@ header{
     border-radius: .25rem;
 }
 
-.hero h2{
+.hero h2,
+footer h2{
     color: #d77f01;
+}
+
+.fa{
+    text-decoration: none;
 }
 
 header .fa,
 footer .fa{
     color: white;
-    text-decoration: none;
 }
 
+
 main .fa{
-    text-decoration: none;
     color: black;
 }
+
 .hero .social-icons{
     align-self: flex-end;
     display: flex;
@@ -133,6 +138,24 @@ footer .info{
     display: flex;
     justify-content: space-evenly;
 }
+
+
+.social-icons-footer .cv,
+.social-icons .cv,
+footer .number,
+footer .email{
+    height: 2.5rem;
+    width: auto;
+}
+
+.phone-number,
+.email{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
 
 main{
     width: min(100% - 100px, 1400px);
